@@ -94,20 +94,22 @@ var gallery = `
                         
                         <div class="sq-grid-it">
                             <img class="gallery" id="gallery" src="metadata/resources/images/mt.jpg" alt="">
-                            <div class="poppins-small">Tuan</div>
+                            <div class="poppins-small">Tuấn </div>
                         </div>
                         <div class="sq-grid-it">
                             <img class="gallery" id="gallery" src="metadata/resources/images/np.jpg" alt="">
-                            <div class="poppins-small">❤️</div>
+                            <div class="poppins-small">:3</div>
                         </div>
                         <div class="sq-grid-it">
                             <img class="gallery" id="gallery" src="metadata/resources/images/kh.jpg" alt="">
-                            <div class="poppins-small">Ha</div>
+                            <div class="poppins-small">Hạ</div>
                         </div>
                     </div>
 `
 function load_login_form() {
     $('#content-body').html(profile);
+    let audio_obj = document.getElementById("audio-ctrl");
+    audio_obj.pause();
 }
 function change_to_profile1() {
     $('.content').children().hide();
