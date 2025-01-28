@@ -93,8 +93,6 @@ body {
     display: grid;
     grid-template-columns: 20% auto;
     height: 100%;
-    background-color: black;
-    color: white;
     /* background-color: whitesmoke;
     color: black; */
     box-shadow: 1px 1px 7px grey;
@@ -279,4 +277,16 @@ audio {
 
 #gallery {
     width: 100%;
+}
+
+#dark-theme {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    border: solid 1px white;
+    margin: 10px;
+    font-size: 25px;
 }

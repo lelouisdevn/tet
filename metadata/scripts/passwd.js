@@ -51,7 +51,7 @@ const profile = `
     <div class="sq-fm-til poppins-medium">Log in with your <br/>Personal Credentials</div>
         <div class="sq-fm-ctn">
             <div class="sq-fm-form">
-                <input type="text" placeholder="Your name in no spaces and accents: ....." id="username">
+                <input type="text" placeholder="Your full name in no spaces and accents: ....." id="username">
             </div>
             <div class="sq-fm-form">
                 <input type="password" placeholder="Your password: ....." id="password">
@@ -108,6 +108,10 @@ var gallery = `
 `
 function load_login_form() {
     $('#content-body').html(profile);
+    $('.sq-grid').css({
+        "background-color": "black",
+        "color": "white"
+    })
     let audio_obj = document.getElementById("audio-ctrl");
     audio_obj.pause();
 }
@@ -205,3 +209,13 @@ function show_ending () {
 load_login_form();
 main();
 // 
+
+$('#dark-theme').on('click', ()=> {
+    $('.sq-grid').css({
+        "background-color":"white",
+        "color": "black"
+    })
+    $('#dark-theme').css({
+        "opacity":"0"
+    })
+})
